@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Yekan';
+    src: url('../font/Yekan/Yekan.eot'),url('../font/Yekan/Yekan.svg'),url('../font/Yekan/Yekan.ttf'),url('../font/Yekan/yekan.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'shabnam-400';
+    src: url('../font/shabnam-400/shabnam-400.eot'),url('../font/shabnam-400/shabnam-400.woff'),url('../font/shabnam-400/shabnam-400.ttf'),url('../font/shabnam-400/shabnam-400.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'shabnam-700';
+    src: url('../font/shabnam-700/shabnam-700.eot'),url('../font/shabnam-700/shabnam-700.ttf'),url('../font/shabnam-700/shabnam-700.woff'),url('../font/shabnam-700/shabnam-700.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontAwesome';
+    src: url('../font/font-awesome/fonts/fontAwesome.eot'),url('../font/font-awesome/fonts/fontAwesome.otf'),url('../font/font-awesome/fonts/fontAwesome.svg')
+    ,url('../font/font-awesome/fonts/fontAwesome.ttf'),url('../font/font-awesome/fonts/fontAwesome.woff'),url('../font/font-awesome/fonts/fontAwesome.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'uicon';
+    src: url('../font/uicons-regular-rounded/font/uicons-regular-rounded.eot'),url('../font/uicons-regular-rounded/font/uicons-regular-rounded.woff'),
+    url('../font/uicons-regular-rounded/font/uicons-regular-rounded.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: #333;
+    font-family: 'Yekan';
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.clear-fix{
+    clear: both;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.mb-5{
+    margin-bottom: 5px;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.mb-15{
+    margin-bottom: 15px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mt-5{
+    margin-top: 5px;
+}
+
+.mt-10{
+    margin-top: 10px;
+}
+
+.mt-15{
+    margin-top: 15px;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.mr-5{
+    margin-right: 5px;
+}
+
+.mr-10{
+    margin-right: 10px;
+}
+
+.mr-15{
+    margin-right: 15px;
+}
+
+.mr-20{
+    margin-right: 20px;
+}
+
+.ml-5{
+    margin-right: 5px;
+}
+
+.ml-10{
+    margin-left: 10px;
+}
+
+.ml-15{
+    margin-left: 15px;
+}
+
+.ml-20{
+    margin-left: 20px;
+}
+
+.pt-5{
+    padding-top: 5px;
+}
+
+.pt-10{
+    padding-top: 10px;
+}
+
+.pt-15{
+    padding-top: 15px;
+}
+
+.pt-20{
+    padding-top: 20px;
+}
+
+.pb-5{
+    padding-bottom: 5px;
+}
+
+.pb-10{
+    padding-bottom: 10px;
+}
+
+.pb-15{
+    padding-bottom: 15px;
+}
+
+.pb-20{
+    padding-bottom: 20px;
+}
+
+.pr-5{
+    padding-right: 5px;
+}
+
+.pr-10{
+    padding-right: 10px;
+}
+
+.pr-15{
+    padding-right: 15px;
+}
+
+.pr-20{
+    padding-right: 20px;
+}
+
+.pl-5{
+    padding-left: 5px;
+}
+
+.pl-10{
+    padding-left: 10px;
+}
+
+.pl-15{
+    padding-left: 15px;
+}
+
+.pl-20{
+    padding-left: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+a:hover{
+    color: darkorange;
+}
