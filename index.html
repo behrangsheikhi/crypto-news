@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- a simple news web page with pure html and css,No framework or other tools
     Copyright BEHRANG SHEIKHI , Feb,3 2022 -->
     <title>اخبار روز دنیای تکنولوژی | برنامه نویسی</title>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css files here -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="font/font-awesome/font-awesome.css">
-    <link rel="stylesheet" href="font/uicons-regular-rounded/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="font/font-awesome/font-awesome.css" />
+    <link
+      rel="stylesheet"
+      href="font/uicons-regular-rounded/uicons-regular-rounded.css"
+    />
     <!-- css files here -->
-</head>
-<body>
+  </head>
+  <body>
+    <!-- all website here but footer not -->
     <section class="app">
-        <header>
-            <nav class="header">
-                <img src="img/logo-black.png" class="header-logo" alt="">
+      <header>
+        <nav class="header">
+          <img src="img/logo-black.png" class="header-logo" alt="" />
 
-                <button class="header-menu-burger" onclick="showMenu()">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <p>سلام</p>
-            </nav>
-        </header>
+          <button type="submit" class="header-menu-burger" onclick="showMenu()">
+            <i class="fa fa-bars"></i>
+          </button>
+          <!-- header menus here -->
+          <ul class="header-menu" id="header">
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">خانه</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">خدمات</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">تماس با ما</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">درباره ما</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-item-link" href="#">وبلاگ</a>
+            </li>
+          </ul>
+          <section class="clear-fix"></section>
+          <!-- header menues here -->
+        </nav>
+      </header>
+
+      <!-- main content here -->
+      <section class="content">
+          <section class="intro-h-600">
+              <section class="intro-row intro-h-2-3 mb-10">
+                  <section class="intro-2-3-col intro-h-100 position-relative">
+                      
+                  </section>
+              </section>
+          </section>
+      </section>
+      <!-- main content here -->
     </section>
+    <!-- end all content -->
 
-    
-
+    <footer class="footer"></footer>
     <!-- my js codes here -->
-    <script></script>
-</body>
+    <script>
+      function showMenu() {
+        var menu = document.getElementById("header");
+        if (menu.className === "header-menu") {
+          menu.className += " show";
+        } else {
+          menu.className = "header-menu";
+        }
+      }
+    </script>
+  </body>
 </html>

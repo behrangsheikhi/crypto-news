@@ -47,6 +47,7 @@
 }
 
 html,body{
+    direction: rtl;
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -62,6 +63,18 @@ html,body{
 
 .position-absolute{
     position: absolute;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    all: unset;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 .mb-5{
@@ -203,3 +216,160 @@ li{
 a:hover{
     color: darkorange;
 }
+
+/* styles in detail */
+
+.title{
+    position: relative;
+    font-size: 22px;
+    color: #F8B510;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.title::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    background : #ccc;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+}
+
+.title::after{
+    position: absolute;
+    content: '';
+    height: 5px;
+    background: #F8B510;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    z-index: 1;
+}
+
+.article-title{
+    padding-top: 20px;
+}
+
+.text-muted{
+    color: #888;
+}
+
+.text-yellow{
+    color: #F8B510;
+}
+
+a{
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+b{
+    transition: all 0.5s;
+}
+
+a:hover{
+    color: #F8B510;
+}
+
+a:hover > b{
+    color: #F8B510;
+}
+
+.app{
+    width: 1300px;
+}
+
+@media(max-width: 1299.98px){
+    .app{
+        width: 1200px;
+    }
+}
+
+@media(max-width : 1199.98px){
+    .app{
+        width: 992px;
+    }
+}
+
+@media(max-width : 991.98px){
+    .app{
+        width: 768px;
+    }
+}
+
+@media(max-width : 767.98px){
+    .app{
+        width: 576px;
+    }
+}
+
+@media(max-width : 575.98px){
+    .app{
+        padding: 0 20px;
+        width: calc(100% - 40px);
+    }
+}
+
+.header-logo{
+    float: left;
+    margin: 30px 0;
+}
+
+.header-menu{
+    float: right;
+}
+
+.header-menu-item{
+    display: inline-block;
+    margin: 30px 15px;
+    font-size: 22px;
+    color: #333;
+}
+
+@media(max-width : 992px){
+    .header-logo{
+        width: 100px;
+        margin: 32px 0;
+    }
+
+    .header-menu-item{
+        margin: 10px;
+    }
+}
+
+@media(max-width : 767.98px){
+    .header-menu{
+        display: none;
+        width: 100%;
+    }
+
+    .header-menu-item{
+        display: block;
+        border-bottom: 1px solid #888;
+        float: right;
+        width: 100%;
+    }
+}
+
+.header-menu-burger{
+    float: right;
+    margin: 30px 0;
+    background-color: #fff;
+    color: #000;
+    border: none;
+
+}
+
+@media(min-width : 768px){
+    .header-menu-burger{
+        display: none;
+    }
+}
+
+.show{
+    display: inline-block !important;
+}
+
